@@ -30,7 +30,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0xe98a3a8314c57779ef6964673206e277aedd7862611deca48e2c613aa2db44c4");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // LitCoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2059,7 +2059,7 @@ bool LoadBlockIndex(bool fAllowNew)
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0x5a;
         pchMessageStart[3] = 0xf2;
-        hashGenesisBlock = uint256("0x9b7bc86236c34b5e3a39367c036b7fe8807a966c22a7a1f0da2a198a27e03731");
+        hashGenesisBlock = uint256("0xe98a3a8314c57779ef6964673206e277aedd7862611deca48e2c613aa2db44c4");
     }
 
     //
@@ -2079,7 +2079,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "LitCoin began on 12 April 2025";
+        const char* pszTimestamp = "LitCoin began on 13 April 2025";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2092,21 +2092,21 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1744503228;
+        block.nTime    = 1744558420;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 0;
+        block.nNonce   = 744008;
 
         if (fTestNet)
         {
-            block.nTime    = 1744503228;
-            block.nNonce   = 1000580675;
+            block.nTime    = 1744558420;
+            block.nNonce   = 744008;
         }
 
         //// debug print
         printf("%s\n", block.GetHash().ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0x002851f96f4f790ca2effe5e29b987f2ec693ed886b41a81ef9319c2f330fd67"));
 
         // If genesis block hash does not match, then generate new genesis hash.
         if (true && block.GetHash() != hashGenesisBlock)
