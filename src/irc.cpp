@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 FooCoin developers
+// Copyright (c) 2013 LitCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -301,8 +301,8 @@ void ThreadIRCSeed2(void* parg)
             // randomly join #litecoin00-#litecoin99
             int channel_number = GetRandInt(100);
             channel_number = 0; // Litecoin: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #foocoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #foocoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("JOIN #litcoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #litcoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();

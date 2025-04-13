@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About FooCoin</source>
-        <translation>Sobre o FooCoin</translation>
+        <source>About LitCoin</source>
+        <translation>Sobre o LitCoin</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="53"/>
-        <source>&lt;b&gt;FooCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;FooCoin&lt;/b&gt; versão</translation>
+        <source>&lt;b&gt;LitCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;LitCoin&lt;/b&gt; versão</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="97"/>
@@ -39,8 +39,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your FooCoin addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estes são os seus endereços FooCoin para receber pagamentos. Poderá enviar um endereço diferente para cada remetente para poder identificar os pagamentos.</translation>
+        <source>These are your LitCoin addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estes são os seus endereços LitCoin para receber pagamentos. Poderá enviar um endereço diferente para cada remetente para poder identificar os pagamentos.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="36"/>
@@ -222,8 +222,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>FooCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>O cliente FooCoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus bitcoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
+        <source>LitCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>O cliente LitCoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus bitcoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="207"/>
@@ -277,8 +277,8 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>FooCoin Wallet</source>
-        <translation>Carteira FooCoin</translation>
+        <source>LitCoin Wallet</source>
+        <translation>Carteira LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="215"/>
@@ -287,8 +287,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="248"/>
-        <source>Show/Hide &amp;FooCoin</source>
-        <translation>Mostrar/Ocultar &amp;FooCoin</translation>
+        <source>Show/Hide &amp;LitCoin</source>
+        <translation>Mostrar/Ocultar &amp;LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="515"/>
@@ -362,8 +362,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="240"/>
-        <source>Show information about FooCoin</source>
-        <translation>Mostrar informação sobre FooCoin</translation>
+        <source>Show information about LitCoin</source>
+        <translation>Mostrar informação sobre LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="242"/>
@@ -412,18 +412,18 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="210"/>
-        <source>Send coins to a FooCoin address</source>
+        <source>Send coins to a LitCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="246"/>
-        <source>Modify configuration options for FooCoin</source>
+        <source>Modify configuration options for LitCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="249"/>
-        <source>Show or hide the FooCoin window</source>
-        <translation>Mostrar ou Ocultar a janela FooCoin</translation>
+        <source>Show or hide the LitCoin window</source>
+        <translation>Mostrar ou Ocultar a janela LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="251"/>
@@ -499,13 +499,13 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="343"/>
         <location filename="../bitcoingui.cpp" line="399"/>
-        <source>FooCoin client</source>
-        <translation>Cliente FooCoin</translation>
+        <source>LitCoin client</source>
+        <translation>Cliente LitCoin</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="492"/>
-        <source>%n active connection(s) to FooCoin network</source>
-        <translation><numerusform>%n ligação ativa à rede FooCoin</numerusform><numerusform>%n ligações ativas à rede FooCoin</numerusform></translation>
+        <source>%n active connection(s) to LitCoin network</source>
+        <translation><numerusform>%n ligação ativa à rede LitCoin</numerusform><numerusform>%n ligações ativas à rede LitCoin</numerusform></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="540"/>
@@ -611,7 +611,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="112"/>
-        <source>A fatal error occured. FooCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occured. LitCoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -637,7 +637,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="263"/>
-        <source>The user interface language can be set here. This setting will only take effect after restarting FooCoin.</source>
+        <source>The user interface language can be set here. This setting will only take effect after restarting LitCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -662,7 +662,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="285"/>
-        <source>Whether to show FooCoin addresses in the transaction list</source>
+        <source>Whether to show LitCoin addresses in the transaction list</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -672,7 +672,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="303"/>
-        <source>This setting will take effect after restarting FooCoin.</source>
+        <source>This setting will take effect after restarting LitCoin.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -730,7 +730,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid FooCoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid LitCoin address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -749,7 +749,7 @@ Endereço: %4</translation>
     <message>
         <location filename="../bitcoin.cpp" line="133"/>
         <location filename="../bitcoin.cpp" line="143"/>
-        <source>FooCoin-Qt</source>
+        <source>LitCoin-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -812,12 +812,12 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="222"/>
-        <source>&amp;Start FooCoin on system login</source>
+        <source>&amp;Start LitCoin on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
-        <source>Automatically start FooCoin after logging in to the system</source>
+        <source>Automatically start LitCoin after logging in to the system</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -905,8 +905,8 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../messagepage.cpp" line="30"/>
-        <source>Enter a FooCoin address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
-        <translation>Introduza um endereço FooCoin (p.ex. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
+        <source>Enter a LitCoin address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
+        <translation>Introduza um endereço LitCoin (p.ex. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
     </message>
     <message>
         <location filename="../messagepage.cpp" line="83"/>
@@ -951,7 +951,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="348"/>
-        <source>Automatically open the FooCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the LitCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir a porta do cliente bitcoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
@@ -962,7 +962,7 @@ Endereço: %4</translation>
     <message>
         <location filename="../optionsdialog.cpp" line="352"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>Ligar à rede FooCoin através de um proxy SOCKS4 (p.ex. quando ligar através de Tor)</translation>
+        <translation>Ligar à rede LitCoin através de um proxy SOCKS4 (p.ex. quando ligar através de Tor)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="357"/>
@@ -1003,7 +1003,7 @@ Endereço: %4</translation>
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FooCoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LitCoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1120,7 +1120,7 @@ Endereço: %4</translation>
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>FooCoin debug window</source>
+        <source>LitCoin debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1203,7 +1203,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="299"/>
-        <source>Open the FooCoin debug logfile from the current data directory. This can take a few seconds for large logfiles.</source>
+        <source>Open the LitCoin debug logfile from the current data directory. This can take a few seconds for large logfiles.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1228,7 +1228,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="212"/>
-        <source>Welcome to the FooCoin RPC console.</source>
+        <source>Welcome to the LitCoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1412,8 +1412,8 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="26"/>
-        <source>Enter a FooCoin address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
-        <translation>Introduza um endereço FooCoin (p.ex. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
+        <source>Enter a LitCoin address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
+        <translation>Introduza um endereço LitCoin (p.ex. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
     </message>
 </context>
 <context>
@@ -1861,12 +1861,12 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="20"/>
-        <source>Enter the message and signature below (be careful to correctly copy newlines, spaces, tabs and other invisible characters) to obtain the FooCoin address used to sign the message.</source>
+        <source>Enter the message and signature below (be careful to correctly copy newlines, spaces, tabs and other invisible characters) to obtain the LitCoin address used to sign the message.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="62"/>
-        <source>Verify a message and obtain the FooCoin address used to sign the message</source>
+        <source>Verify a message and obtain the LitCoin address used to sign the message</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1896,7 +1896,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../verifymessagedialog.cpp" line="28"/>
-        <source>Enter FooCoin signature</source>
+        <source>Enter LitCoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1971,8 +1971,8 @@ Endereço: %4</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="43"/>
-        <source>FooCoin version</source>
-        <translation>Versão FooCoin</translation>
+        <source>LitCoin version</source>
+        <translation>Versão LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="44"/>
@@ -2238,13 +2238,13 @@ Opções SSL: (ver a Wiki Bitcoin para instruções de configuração SSL)</tran
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="121"/>
-        <source>Cannot obtain a lock on data directory %s.  FooCoin is probably already running.</source>
-        <translation>Impossível trancar a pasta de dados %s.  Provavelmente o FooCoin já está a ser executado.</translation>
+        <source>Cannot obtain a lock on data directory %s.  LitCoin is probably already running.</source>
+        <translation>Impossível trancar a pasta de dados %s.  Provavelmente o LitCoin já está a ser executado.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="48"/>
-        <source>FooCoin</source>
-        <translation>FooCoin</translation>
+        <source>LitCoin</source>
+        <translation>LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="30"/>
@@ -2293,13 +2293,13 @@ Opções SSL: (ver a Wiki Bitcoin para instruções de configuração SSL)</tran
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of FooCoin</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma versão mais recente do FooCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of LitCoin</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma versão mais recente do LitCoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart FooCoin to complete</source>
-        <translation>A Carteira precisou ser reescrita: reinicie o FooCoin para completar</translation>
+        <source>Wallet needed to be rewritten: restart LitCoin to complete</source>
+        <translation>A Carteira precisou ser reescrita: reinicie o LitCoin para completar</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
@@ -2398,7 +2398,7 @@ Opções SSL: (ver a Wiki Bitcoin para instruções de configuração SSL)</tran
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="28"/>
-        <source>Unable to bind to %s on this computer. FooCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. LitCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2511,8 +2511,8 @@ Se o ficheiro não existir, crie-o com permissões de leitura apenas para o dono
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="25"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong FooCoin will not work properly.</source>
-        <translation>Atenção: Por favor verifique que a data e hora do seu computador estão correctas.  Se o seu relógio não estiver certo o FooCoin não irá funcionar correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong LitCoin will not work properly.</source>
+        <translation>Atenção: Por favor verifique que a data e hora do seu computador estão correctas.  Se o seu relógio não estiver certo o LitCoin não irá funcionar correctamente.</translation>
     </message>
 </context>
 </TS>

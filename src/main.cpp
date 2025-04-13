@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 FooCoin developers
+// Copyright (c) 2013 LitCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -31,7 +31,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0x");
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // FooCoin: starting difficulty is 1 / 2^12
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // LitCoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 CBigNum bnBestChainWork = 0;
@@ -51,7 +51,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "FooCoin Signed Message:\n";
+const string strMessageMagic = "LitCoin Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -833,16 +833,16 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 100 * COIN; // FooCoin: 100 (Litecoin: 50)
+    int64 nSubsidy = 10000 * COIN; // LitCoin: 100 (Litecoin: 50)
     nSubsidy >>= (nHeight / 800000); 
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetSpacing = 40; // FooCoin: 40 seconds (~1/4x Litecoin: 2.5 minutes)
+static const int64 nTargetSpacing = 60; // LitCoin: 60 seconds (~1/4x Litecoin: 2.5 minutes)
 
-static const int64 nTargetTimespan_Version1 = 60 * 60; // FooCoin: 60 minutes (Litecoin: 3.5 days)
-static const int64 nInterval_Version1 = nTargetTimespan_Version1 / nTargetSpacing; // FooCoin: 90 blocks
+static const int64 nTargetTimespan_Version1 = 12 * 60 * 60; // LitCoin: 12 hours (Litecoin: 3.5 days)
+static const int64 nInterval_Version1 = nTargetTimespan_Version1 / nTargetSpacing; // LitCoin: 90 blocks
 
 static const int64 nHeight_Version2 = 1000000000;
 static const int64 nInterval_Version2 = 15;
@@ -1256,7 +1256,7 @@ bool CTransaction::ConnectInputs(MapPrevTx inputs,
 {
     // Take over previous transactions' spent pointers
     // fBlock is true when this is called from AcceptBlock when a new best-block is added to the blockchain
-    // fMiner is true when called from the internal foocoin miner
+    // fMiner is true when called from the internal litcoin miner
     // ... both are false when called from CTransaction::AcceptToMemoryPool
     if (!IsCoinBase())
     {
@@ -2003,7 +2003,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "FooCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "LitCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2079,26 +2079,26 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "";
+        const char* pszTimestamp = "LitCoin began on 12 April 2025";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 100 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("") << OP_CHECKSIG;
-		txNew.strTxComment = "text:FooCoin genesis block";
+		txNew.strTxComment = "text:LitCoin genesis block";
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1371488396;
+        block.nTime    = 1744503228;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 0;
 
         if (fTestNet)
         {
-            block.nTime    = 1371387277;
+            block.nTime    = 1744503228;
             block.nNonce   = 1000580675;
         }
 

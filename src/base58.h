@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin Developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 FooCoin developers
+// Copyright (c) 2013 LitCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -278,7 +278,7 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 35, // Floriscoin addresses start with F
+        PUBKEY_ADDRESS = 19, // Litcoin addresses start with L
         SCRIPT_ADDRESS = 8,
         PUBKEY_ADDRESS_TEST = 115,
         SCRIPT_ADDRESS_TEST = 198,
